@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="710.0" prefWidth="900.0" style="-fx-background-color: #1e3963;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.classes.interfaces.DirWorkersController">
+   <children>
+      <AnchorPane layoutY="105.0" prefHeight="612.0" prefWidth="900.0" style="-fx-background-color: f0f6ff;">
+         <children>
+            <TableView fx:id="tableWorkers" layoutX="52.0" layoutY="32.0" prefHeight="284.0" prefWidth="796.0">
+               <columns>
+                  <TableColumn fx:id="IDColumn" prefWidth="48.79998779296875" text="ID" />
+                  <TableColumn fx:id="loginColumn" prefWidth="118.39998626708984" text="Логин" />
+                  <TableColumn fx:id="nameColumn" prefWidth="161.60003662109375" text="Имя" />
+                  <TableColumn fx:id="surnameColumn" prefWidth="162.39999389648438" text="Фамилия" />
+                  <TableColumn fx:id="postColumn" prefWidth="160.0" text="Должность" />
+                  <TableColumn fx:id="salaryColumn" prefWidth="144.79998779296875" text="Оклад, $" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnFind" layoutX="330.0" layoutY="367.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Найти" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="choiceBox" layoutX="52.0" layoutY="367.0" prefHeight="56.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" />
+            <Button fx:id="btnBasic" layoutX="608.0" layoutY="367.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Ср. оклады" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Text fx:id="choiceTxt" fill="GREY" layoutX="78.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите должность" textAlignment="CENTER" wrappingWidth="188.00000610351572">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="labelAmount" fill="GREY" layoutX="52.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество сотрудников:" wrappingWidth="447.19998779296884">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnSalary" layoutX="52.0" layoutY="496.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Зарплата" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnWeekend" layoutX="330.0" layoutY="496.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Отпуск" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Text fx:id="labelWorkers" fill="WHITE" layoutX="79.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сотрудники" textAlignment="CENTER" wrappingWidth="742.8690185546875">
+         <font>
+            <Font name="Calibri" size="40.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnBack" layoutX="42.0" layoutY="26.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="122.0" style="-fx-background-color: f0f6ff;" text="Назад" textFill="#1e3963">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

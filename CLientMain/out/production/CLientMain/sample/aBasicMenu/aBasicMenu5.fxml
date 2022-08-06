@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="710.0" prefWidth="900.0" style="-fx-background-color: #1e3963;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.aBasicMenu.ABasicMenu5Controller">
+   <children>
+      <AnchorPane layoutY="105.0" prefHeight="612.0" prefWidth="900.0" style="-fx-background-color: f0f6ff;">
+         <children>
+            <TableView fx:id="tableUsers" layoutX="52.0" layoutY="32.0" prefHeight="290.0" prefWidth="796.0">
+               <columns>
+                  <TableColumn fx:id="IDColumn" prefWidth="48.79998779296875" text="ID" />
+                  <TableColumn fx:id="loginColumn" prefWidth="232.79998016357422" text="Логин" />
+                  <TableColumn fx:id="passwordColumn" prefWidth="208.00003051757812" text="Пароль" />
+                  <TableColumn fx:id="roleColumn" prefWidth="115.20001220703125" text="Роль" />
+                  <TableColumn fx:id="nameColumn" prefWidth="195.20001220703125" text="Имя" />
+               </columns>
+            </TableView>
+            <TextField fx:id="inputID" layoutX="50.0" layoutY="523.0" opacity="0.9" prefHeight="34.0" prefWidth="65.0" promptText="ID" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="inputLogin" layoutX="157.0" layoutY="523.0" opacity="0.9" prefHeight="34.0" prefWidth="158.0" promptText="Логин" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="inputPassword" layoutX="359.0" layoutY="523.0" opacity="0.9" prefHeight="34.0" prefWidth="158.0" promptText="Пароль" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="inputRole" layoutX="547.0" layoutY="523.0" opacity="0.9" prefHeight="34.0" prefWidth="143.0" promptText="Роль" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="inputName" layoutX="712.0" layoutY="523.0" opacity="0.9" prefHeight="34.0" prefWidth="158.0" promptText="Имя" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnChange" layoutX="50.0" layoutY="439.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Изменить" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAdd" layoutX="50.0" layoutY="365.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Добавить" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSearch" layoutX="325.0" layoutY="439.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Поиск" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="326.0" layoutY="365.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Удалить" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRefresh" layoutX="611.0" layoutY="399.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="190.0" style="-fx-background-color: #98a2b3;" text="Обновить" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Label fx:id="infoArea" layoutX="245.0" layoutY="562.0" prefHeight="36.0" prefWidth="398.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text fx:id="logoTxt" fill="WHITE" layoutX="79.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пользователи" textAlignment="CENTER" wrappingWidth="742.8690185546875">
+         <font>
+            <Font name="Calibri" size="40.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnBack" layoutX="42.0" layoutY="26.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="122.0" style="-fx-background-color: f0f6ff;" text="Назад" textFill="#1e3963">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="710.0" prefWidth="900.0" style="-fx-background-color: #1e3963;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.classes.interfaces.DocumentsController">
+   <children>
+      <AnchorPane layoutY="105.0" prefHeight="612.0" prefWidth="900.0" style="-fx-background-color: f0f6ff;">
+         <children>
+            <TableView fx:id="tableDocs" layoutX="120.0" layoutY="29.0" prefHeight="290.0" prefWidth="660.0">
+               <columns>
+                  <TableColumn fx:id="userIDColumn" prefWidth="80.80001068115234" text="ID сотр." />
+                  <TableColumn fx:id="IDColumn" prefWidth="48.79998779296875" text="ID" />
+                  <TableColumn fx:id="titleColumn" prefWidth="238.4000244140625" text="Тема" />
+                  <TableColumn fx:id="dateColumn" prefWidth="92.00003051757812" text="Дата" />
+                  <TableColumn fx:id="cnfDirColumn" prefWidth="95.199951171875" text="Подпись дир." />
+                  <TableColumn fx:id="cnfAccColumn" prefWidth="107.20001220703125" text="Подпись бухг." />
+               </columns>
+            </TableView>
+            <Button fx:id="btnConfirm" layoutX="120.0" layoutY="365.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Подписать" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDecline" layoutX="540.0" layoutY="365.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Отказать" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Text fx:id="labelDocs" fill="WHITE" layoutX="79.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Документы" textAlignment="CENTER" wrappingWidth="742.8690185546875">
+         <font>
+            <Font name="Calibri" size="40.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnBack" layoutX="42.0" layoutY="26.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="122.0" style="-fx-background-color: f0f6ff;" text="Назад" textFill="#1e3963">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

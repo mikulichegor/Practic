@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="710.0" prefWidth="900.0" style="-fx-background-color: #1e3963;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.aBasicMenu.ABasicMenu9Controller">
+   <children>
+      <AnchorPane layoutY="105.0" prefHeight="612.0" prefWidth="900.0" style="-fx-background-color: f0f6ff;">
+         <children>
+            <TableView fx:id="tableTransact" layoutX="52.0" layoutY="32.0" prefHeight="540.0" prefWidth="240.0">
+               <columns>
+                  <TableColumn fx:id="IDColumn" prefWidth="56.0" text="ID" />
+                  <TableColumn fx:id="infoColumn" prefWidth="183.20000457763672" text="Компания" />
+               </columns>
+            </TableView>
+            <TextField fx:id="inputID" layoutX="338.0" layoutY="112.0" opacity="0.9" prefHeight="34.0" prefWidth="190.0" promptText="ID" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="inputInfo" layoutX="338.0" layoutY="160.0" opacity="0.9" prefHeight="34.0" prefWidth="190.0" promptText="Компания" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnChange" layoutX="592.0" layoutY="112.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Изменить" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAdd" layoutX="592.0" layoutY="32.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Добавить" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSearch" layoutX="592.0" layoutY="266.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Поиск" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="592.0" layoutY="192.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #98a2b3;" text="Удалить" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRefresh" layoutX="338.0" layoutY="32.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="190.0" style="-fx-background-color: #98a2b3;" text="Обновить" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Button>
+            <Label fx:id="infoArea" layoutX="297.0" layoutY="202.0" prefHeight="36.0" prefWidth="272.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text fx:id="logoTxt" fill="WHITE" layoutX="79.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Компании" textAlignment="CENTER" wrappingWidth="742.8690185546875">
+         <font>
+            <Font name="Calibri" size="40.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnBack" layoutX="42.0" layoutY="26.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="122.0" style="-fx-background-color: f0f6ff;" text="Назад" textFill="#1e3963">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
